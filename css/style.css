@@ -230,6 +230,7 @@ p {
     flex-direction: row;
     gap: 35px;
     align-content: center;
+    justify-content: center;
 }
 
 .short-way {
@@ -239,6 +240,13 @@ p {
     gap: 5px;
 }
 
-.ways-short p {
+.ways-short a {
     color: #ac99eaff;
+
+}
+.ways-short a:hover {
+    text-decoration: underline;
+}
+.bigger-h2{
+    font-size: 40px;
 }
