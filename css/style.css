@@ -189,7 +189,11 @@ p {
 }
 
 .way {
-    border: 3px solid #ac99eaff;
+    /* border: 3px solid #ac99eaff; */
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    --tw-border-opacity: 1;
     border-radius: 15px;
     padding: 25px;
     margin: 10px;
@@ -197,6 +201,23 @@ p {
     flex-direction: column;
     align-items: start;
     gap: 10px;
+    height: 100%;
+}
+
+.big-way-web {
+    border-color: rgb(151 128 229/var(--tw-border-opacity));
+}
+
+.big-way-mobile {
+    border-color: rgb(230 102 204/var(--tw-border-opacity));
+}
+
+.big-way-cloud {
+    border-color: rgb(126 218 227/var(--tw-border-opacity));
+}
+
+.big-way-micro {
+    border-color: rgb(151 128 229/var(--tw-border-opacity));
 }
 
 .way-container {
@@ -238,15 +259,46 @@ p {
     flex-direction: row;
     align-items: center;
     gap: 5px;
+    --arrow-gap: 0px;
+    --arrow-right: 10px;
+
+}
+
+.short-way:hover{
+    --arrow-gap: 10px;
+    --arrow-right: 0px;
+}
+
+.short-way svg{
+    transition: margin 500ms;
+    margin-left: var(--arrow-gap);
+    margin-right: var(--arrow-right);
 }
 
 .ways-short a {
     color: #ac99eaff;
 
 }
+
 .ways-short a:hover {
     text-decoration: underline;
 }
-.bigger-h2{
+
+.bigger-h2 {
     font-size: 40px;
+}
+
+svg {
+    --colors-primary-purple: #9780e5;
+    --colors-primary-magenta: #e666cc;
+    --colors-primary-flamingo: #fa97a1;
+    --colors-primary-blue: #53ceda;
+    --colors-grey: #adadad;
+    --colors-white: #242424;
+    --colors-light-gray: #1f1f1f;
+    --colors-dark-gray: #fff;
+    --colors-white-gray: #1f1f1f;
+    --colors-white-additional-gray: #333;
+    --colors-dark-additional-gray: #474747;
+    --colors-white-inverse: #fff;
 }
