@@ -19,7 +19,7 @@ h2 {
 
 .big-header {
     font-size: 68px;
-    margin: 60px 0px 10px 0px;
+    margin: 80px 0px 10px 0px;
 }
 
 a {
@@ -131,7 +131,19 @@ nav a {
 }
 
 .btd-section {
+    top: 0px;
     width: 660px;
+    z-index: 5;
+}
+
+.up-view{
+    position: relative;
+}
+.cool-img{
+    position: absolute;
+    top: -600px;
+    left: 200px;
+    z-index: -1;
 }
 
 .about-text {
@@ -182,6 +194,7 @@ p {
     flex-direction: column;
     align-items: center;
     align-self: self-start;
+    margin-top: 20px;
 }
 
 .centred {
@@ -190,18 +203,13 @@ p {
 
 .way {
     /* border: 3px solid #ac99eaff; */
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 20px;
-    --tw-border-opacity: 1;
-    border-radius: 15px;
-    padding: 25px;
-    margin: 10px;
+
+    padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 10px;
-    height: 100%;
+    
 }
 
 .big-way-web {
@@ -223,6 +231,17 @@ p {
 .way-container {
     display: table-cell;
     text-align: center;
+    align-items: stretch;
+    margin: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    --tw-border-opacity: 1;
+    padding: 10px;
+    width: 270px;
+    /* height: 180px; */
+    --tw-bg-opacity: 1;
+    background-color: rgb(41 41 41/var(--tw-bg-opacity));
 }
 
 .way-name {
@@ -231,8 +250,10 @@ p {
 }
 
 .ways-big {
-    display: table;
-
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
 }
 
 .way img {
@@ -252,6 +273,7 @@ p {
     gap: 35px;
     align-content: center;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .short-way {
@@ -261,7 +283,6 @@ p {
     gap: 5px;
     --arrow-gap: 0px;
     --arrow-right: 10px;
-
 }
 
 .short-way:hover{
@@ -277,7 +298,7 @@ p {
 
 .ways-short a {
     color: #ac99eaff;
-
+    cursor: pointer;
 }
 
 .ways-short a:hover {
@@ -286,6 +307,7 @@ p {
 
 .bigger-h2 {
     font-size: 40px;
+    margin-top: 50px;
 }
 
 svg {
